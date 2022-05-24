@@ -9,7 +9,7 @@ import CoreLocation
 import GoogleMaps
 import UIKit
 
-class ViewController: UIViewController {
+class MapViewController: UIViewController {
     @IBOutlet var mapView: GMSMapView!
 
     let coordinate = CLLocationCoordinate2D(latitude: 55.753215, longitude: 37.622504)
@@ -19,6 +19,8 @@ class ViewController: UIViewController {
     var route: GMSPolyline?
     var routePath: GMSMutablePath?
     var routeManager: RouteManagerProtocol?
+
+    var onExit: (() -> Void)?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -69,6 +71,11 @@ class ViewController: UIViewController {
         }
     }
 
+    @IBAction func tapExit(_: Any) {
+        UserDefaults.isLogin = false
+        onExit?()
+    }
+
     private func routeInit() {
         route?.map = nil
         route = GMSPolyline()
@@ -106,13 +113,13 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController: GMSMapViewDelegate {
+extension MapViewController: GMSMapViewDelegate {
     func mapView(_: GMSMapView, didTapAt coordinate: CLLocationCoordinate2D) {
         print(coordinate)
     }
 }
 
-extension ViewController: CLLocationManagerDelegate {
+extension MapViewController: CLLocationManagerDelegate {
     func locationManager(_: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let location = locations.last else { return }
 
