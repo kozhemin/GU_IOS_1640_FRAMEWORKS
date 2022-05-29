@@ -9,6 +9,7 @@ import UIKit
 
 extension UITextField {
     func appDefaultFieldStyle() {
+        autocorrectionType = .no
         textColor = .black
         layer.borderColor = UIColor.black.cgColor
         layer.borderWidth = 1

@@ -7,4 +7,5 @@
 
 import Foundation
 
-let GMS_API_KEY = "AIzaSyB7TIrwlUBq-v6O3UkXs08xsi2V5HTlL0A"
+ 
+let GMS_API_KEY = API.GMS_KEY
