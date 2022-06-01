@@ -17,6 +17,7 @@
 		97683C0F28469D4B0061252D /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 97683C0E28469D4B0061252D /* RxCocoa */; };
 		97683C1128469D4B0061252D /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 97683C1028469D4B0061252D /* RxRelay */; };
 		97683C1328469D4B0061252D /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 97683C1228469D4B0061252D /* RxSwift */; };
+		97683C152846A0140061252D /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97683C142846A0140061252D /* LocationManager.swift */; };
 		9771B9F2283452C100952015 /* RouteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9771B9F1283452C100952015 /* RouteManager.swift */; };
 		9771B9F52834563100952015 /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9771B9F42834563100952015 /* RealmService.swift */; };
 		97723B32282F0ABB0017D20C /* PrivateServiceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97723B31282F0ABB0017D20C /* PrivateServiceKey.swift */; };
@@ -50,6 +51,7 @@
 		97683BFF284698930061252D /* RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		97683C032846989B0061252D /* RxCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		97683C06284698CB0061252D /* RxRelay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxRelay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97683C142846A0140061252D /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		9771B9F1283452C100952015 /* RouteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteManager.swift; sourceTree = "<group>"; };
 		9771B9F42834563100952015 /* RealmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmService.swift; sourceTree = "<group>"; };
 		97723B31282F0ABB0017D20C /* PrivateServiceKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateServiceKey.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 				9771B9F32834560800952015 /* Services */,
 				9771B9F1283452C100952015 /* RouteManager.swift */,
 				97FEBAD9283C1212000C9E37 /* UserManager.swift */,
+				97683C142846A0140061252D /* LocationManager.swift */,
 			);
 			path = BusinessLogic;
 			sourceTree = "<group>";
@@ -404,6 +407,7 @@
 				973E78F7282F022E0093CA78 /* SceneDelegate.swift in Sources */,
 				97723B32282F0ABB0017D20C /* PrivateServiceKey.swift in Sources */,
 				97FEBAD3283BCF19000C9E37 /* AuthCoordinator.swift in Sources */,
+				97683C152846A0140061252D /* LocationManager.swift in Sources */,
 				97FEBAD1283BCD25000C9E37 /* ApplicationCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
