@@ -22,6 +22,7 @@
 		9771B9F52834563100952015 /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9771B9F42834563100952015 /* RealmService.swift */; };
 		97723B32282F0ABB0017D20C /* PrivateServiceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97723B31282F0ABB0017D20C /* PrivateServiceKey.swift */; };
 		9788FEA6284402F0008B6C05 /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9788FEA5284402F0008B6C05 /* AppConfiguration.swift */; };
+		97F9AA81284E9E36007FB07C /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F9AA80284E9E36007FB07C /* NotificationManager.swift */; };
 		97FEBAC7283B879D000C9E37 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FEBAC6283B879D000C9E37 /* LoginViewController.swift */; };
 		97FEBAC9283B8E27000C9E37 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FEBAC8283B8E27000C9E37 /* RegistrationViewController.swift */; };
 		97FEBACF283BCC8F000C9E37 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FEBACE283BCC8F000C9E37 /* BaseCoordinator.swift */; };
@@ -57,6 +58,7 @@
 		97723B31282F0ABB0017D20C /* PrivateServiceKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateServiceKey.swift; sourceTree = "<group>"; };
 		9788FEA5284402F0008B6C05 /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
 		9788FEB0284428DF008B6C05 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		97F9AA80284E9E36007FB07C /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		97FEBAC6283B879D000C9E37 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		97FEBAC8283B8E27000C9E37 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		97FEBACE283BCC8F000C9E37 /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 				9771B9F1283452C100952015 /* RouteManager.swift */,
 				97FEBAD9283C1212000C9E37 /* UserManager.swift */,
 				97683C142846A0140061252D /* LocationManager.swift */,
+				97F9AA80284E9E36007FB07C /* NotificationManager.swift */,
 			);
 			path = BusinessLogic;
 			sourceTree = "<group>";
@@ -392,6 +395,7 @@
 			files = (
 				9788FEA6284402F0008B6C05 /* AppConfiguration.swift in Sources */,
 				97FEBADE283C3513000C9E37 /* MainCoordinator.swift in Sources */,
+				97F9AA81284E9E36007FB07C /* NotificationManager.swift in Sources */,
 				971088152834604200EEB77A /* RealmRouteCoodinate.swift in Sources */,
 				9771B9F2283452C100952015 /* RouteManager.swift in Sources */,
 				97FEBAD8283C0FCF000C9E37 /* RealmUser.swift in Sources */,
