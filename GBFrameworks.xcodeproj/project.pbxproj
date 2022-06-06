@@ -17,6 +17,7 @@
 		9771B9F2283452C100952015 /* RouteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9771B9F1283452C100952015 /* RouteManager.swift */; };
 		9771B9F52834563100952015 /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9771B9F42834563100952015 /* RealmService.swift */; };
 		97723B32282F0ABB0017D20C /* PrivateServiceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97723B31282F0ABB0017D20C /* PrivateServiceKey.swift */; };
+		9788FEA6284402F0008B6C05 /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9788FEA5284402F0008B6C05 /* AppConfiguration.swift */; };
 		97FEBAC7283B879D000C9E37 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FEBAC6283B879D000C9E37 /* LoginViewController.swift */; };
 		97FEBAC9283B8E27000C9E37 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FEBAC8283B8E27000C9E37 /* RegistrationViewController.swift */; };
 		97FEBACF283BCC8F000C9E37 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FEBACE283BCC8F000C9E37 /* BaseCoordinator.swift */; };
@@ -46,6 +47,8 @@
 		9771B9F1283452C100952015 /* RouteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteManager.swift; sourceTree = "<group>"; };
 		9771B9F42834563100952015 /* RealmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmService.swift; sourceTree = "<group>"; };
 		97723B31282F0ABB0017D20C /* PrivateServiceKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateServiceKey.swift; sourceTree = "<group>"; };
+		9788FEA5284402F0008B6C05 /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
+		9788FEB0284428DF008B6C05 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		97FEBAC6283B879D000C9E37 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		97FEBAC8283B8E27000C9E37 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		97FEBACE283BCC8F000C9E37 /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
@@ -100,8 +103,8 @@
 		973E78F3282F022E0093CA78 /* GBFrameworks */ = {
 			isa = PBXGroup;
 			children = (
-				97FEBAD4283BDD35000C9E37 /* Ext */,
 				973E7902282F02300093CA78 /* Info.plist */,
+				97FEBAD4283BDD35000C9E37 /* Ext */,
 				9771B9F02834526C00952015 /* Environments */,
 				9771B9EE2834521900952015 /* Resources */,
 				9771B9ED283451FA00952015 /* BusinessLogic */,
@@ -173,6 +176,8 @@
 			isa = PBXGroup;
 			children = (
 				97FEBADB283C3190000C9E37 /* UserDefaults.swift */,
+				9788FEA5284402F0008B6C05 /* AppConfiguration.swift */,
+				9788FEB0284428DF008B6C05 /* Debug.xcconfig */,
 			);
 			path = Environments;
 			sourceTree = "<group>";
@@ -362,6 +367,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9788FEA6284402F0008B6C05 /* AppConfiguration.swift in Sources */,
 				97FEBADE283C3513000C9E37 /* MainCoordinator.swift in Sources */,
 				971088152834604200EEB77A /* RealmRouteCoodinate.swift in Sources */,
 				9771B9F2283452C100952015 /* RouteManager.swift in Sources */,
@@ -522,7 +528,7 @@
 		};
 		973E7906282F02300093CA78 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89A57257ABE2AC51E1358B9C /* Pods-GBFrameworks.debug.xcconfig */;
+			baseConfigurationReference = 9788FEB0284428DF008B6C05 /* Debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
