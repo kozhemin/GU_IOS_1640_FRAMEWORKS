@@ -8,13 +8,15 @@
 import Foundation
 import CoreLocation
 import RxSwift
+import UIKit
 
 final class LocationManager: NSObject {
     static let instance = LocationManager()
 
     let locationManager = CLLocationManager()
     let location: BehaviorSubject<CLLocation?> = BehaviorSubject(value: nil)
-
+    private var currentLocation: CLLocation?
+    
     private override init() {
         super.init()
         configureLocationManager()
@@ -32,6 +34,10 @@ final class LocationManager: NSObject {
         locationManager.requestLocation()
     }
     
+    func getLastLocation() -> CLLocation?{
+        return currentLocation
+    }
+    
     private func configureLocationManager() {
         locationManager.delegate = self
         locationManager.allowsBackgroundLocationUpdates = true
@@ -44,6 +50,7 @@ final class LocationManager: NSObject {
 
 extension LocationManager: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        self.currentLocation = locations.last
         self.location.onNext(locations.last)
     }
     
