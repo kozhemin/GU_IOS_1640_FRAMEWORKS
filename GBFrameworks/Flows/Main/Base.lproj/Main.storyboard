@@ -70,11 +70,18 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Map" id="U8f-YN-wyb">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="arrowshape.turn.up.right.fill" catalog="system" id="Zpu-9z-gGQ">
-                            <connections>
-                                <action selector="tapExit:" destination="BYZ-38-t0r" id="gTj-1g-xqw"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem title="Item" image="arrowshape.turn.up.right.fill" catalog="system" id="Zpu-9z-gGQ">
+                                <connections>
+                                    <action selector="tapExit:" destination="BYZ-38-t0r" id="gTj-1g-xqw"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Item" image="person.fill.viewfinder" catalog="system" id="EjR-XE-nnV">
+                                <connections>
+                                    <action selector="takePicture:" destination="BYZ-38-t0r" id="LpP-OG-nR3"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -235,6 +242,7 @@
     </scenes>
     <resources>
         <image name="arrowshape.turn.up.right.fill" catalog="system" width="128" height="106"/>
+        <image name="person.fill.viewfinder" catalog="system" width="128" height="115"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
